@@ -1,4 +1,4 @@
-node_modules
+# Yarn
 .yarn/*
 .yarn/cache
 !.yarn/patches
@@ -6,4 +6,18 @@ node_modules
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# linting/formatting
+.eslintcache
+
+# misc
 .env
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

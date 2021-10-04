@@ -1,5 +1,6 @@
 {
   "name": "yarn-plugin-ignore-add-options",
+  "private": false,
   "description": "Yarn Plugin to ignore invalid CLI options for `add` command. Based on Tobias Høegh's plugin for the `install` command.",
   "keywords": [
     "yarn",
@@ -22,10 +23,33 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node ./plugin-install.js"
+    "prepare": "husky install",
+    "postinstall": "node ./plugin-install.js",
+    "lint": "eslint . --cache --fix",
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "volta": {
     "node": "16.1.0"
   },
-  "packageManager": "yarn@3.0.2"
+  "packageManager": "yarn@3.0.2",
+  "devDependencies": {
+    "@commitlint/cli": "13.2.0",
+    "@commitlint/config-conventional": "13.2.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-node": "0.3.6",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.2",
+    "lint-staged": "11.2.0",
+    "pinst": "2.1.6",
+    "prettier": "2.4.1"
+  },
+  "lint-staged": {
+    "*.js": "yarn eslint --cache --fix"
+  }
 }

@@ -3,4 +3,12 @@
 .yarnrc.yml
 
 # linting/formatting
+.editorconfig
+.editorconfig
+.eslintignore
+.eslintrc.json
 .prettierrc
+commitlint.config.js
+
+# misc
+.husky/
