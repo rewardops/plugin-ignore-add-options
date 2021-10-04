@@ -7,7 +7,7 @@ module.exports = {
 
     const essentials = require('@yarnpkg/plugin-essentials').default;
     const YarnCommand = essentials.commands.find((plugin) =>
-      plugin?.paths?.[0]?.includes('install')
+      plugin?.paths?.[0]?.includes('add')
     );
 
     // This approach will make the list
