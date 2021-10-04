@@ -1,10 +1,12 @@
 # Yarn
 .yarn/
 .yarnrc.yml
+.pnp.cjs
 
 # linting/formatting
 .editorconfig
 .editorconfig
+.eslintcache
 .eslintignore
 .eslintrc.json
 .prettierrc
@@ -12,3 +14,4 @@ commitlint.config.js
 
 # misc
 .husky/
+.github/
