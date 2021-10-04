@@ -26,7 +26,12 @@ module.exports = {
 
       process.argv = process.argv
         .map((arg, i) => {
-          if (i === 0 || i === 1 || validOptions.includes(arg) || !arg.startsWith('-')) {
+          if (
+            i === 0 ||
+            i === 1 ||
+            validOptions.includes(arg) ||
+            !arg.startsWith('-')
+          ) {
             return arg;
           }
 
@@ -35,6 +40,6 @@ module.exports = {
         .filter(Boolean);
     }
 
-    return {}
+    return {};
   },
-}
+};
