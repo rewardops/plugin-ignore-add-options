@@ -1,10 +1,10 @@
 {
-  "name": "yarn-plugin-ignore-install-options",
+  "name": "yarn-plugin-ignore-add-options",
   "description": "Yarn Plugin to ignore invalid CLI options",
   "keywords": [
     "yarn",
     "plugin",
-    "install",
+    "add",
     "legacy",
     "options",
     "flags"

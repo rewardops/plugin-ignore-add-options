@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'plugin-ignore-install-options',
+  name: 'plugin-ignore-add-options',
   factory: () => {
     if (process.argv.includes('install')) {
       // List all yarn v3 options

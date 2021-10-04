@@ -19,14 +19,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "yarn-plugin-ignore-install-options",
+        "name": "yarn-plugin-ignore-add-options",
         "reference": "workspace:."
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["yarn-plugin-ignore-install-options", ["workspace:."]]
+      ["yarn-plugin-ignore-add-options", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -39,11 +39,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["yarn-plugin-ignore-install-options", [
+      ["yarn-plugin-ignore-add-options", [
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
-            ["yarn-plugin-ignore-install-options", "workspace:."]
+            ["yarn-plugin-ignore-add-options", "workspace:."]
           ],
           "linkType": "SOFT",
         }]

@@ -4,8 +4,8 @@
 __metadata:
   version: 4
 
-"yarn-plugin-ignore-install-options@workspace:.":
+"yarn-plugin-ignore-add-options@workspace:.":
   version: 0.0.0-use.local
-  resolution: "yarn-plugin-ignore-install-options@workspace:."
+  resolution: "yarn-plugin-ignore-add-options@workspace:."
   languageName: unknown
   linkType: soft

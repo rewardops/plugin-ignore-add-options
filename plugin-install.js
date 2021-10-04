@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 const { version } = require('./package.json')
 
-const file = path.resolve(`./ignore-install-options-${version}.js`)
+const file = path.resolve(`./ignore-add-options-${version}.js`)
 
 fs.copyFile('./index.js', file, (error) => {
   if (error) {

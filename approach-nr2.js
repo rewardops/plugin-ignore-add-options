@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'plugin-ignore-install-options',
+  name: 'plugin-ignore-add-options',
   factory: (require) => {
     const { Option } = require('clipanion')
     // const t = require('typanion')
