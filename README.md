@@ -4,6 +4,8 @@ This Yarn Plugin helps you to ignore legacy flags from Yarn v1 – while you add
 
 This way, CIs which by default run e.g. `yarn add --non-interactive --ignore-workspace-root-check --audit` – will still work., as it becomes `yarn add`.
 
+Based on Tobias Høegh's [plugin-ignore-install-options](https://github.com/tujoworker/plugin-ignore-install-options).
+
 ## Requirements
 
 - Yarn v3 or higher.

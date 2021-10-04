@@ -1,6 +1,6 @@
 {
   "name": "yarn-plugin-ignore-add-options",
-  "description": "Yarn Plugin to ignore invalid CLI options",
+  "description": "Yarn Plugin to ignore invalid CLI options for `add` command. Based on Tobias Høegh's plugin for the `install` command.",
   "keywords": [
     "yarn",
     "plugin",
@@ -10,8 +10,16 @@
     "flags"
   ],
   "license": "MIT",
-  "author": "Tobias Høegh",
-  "version": "1.0.2",
+  "author": "RewardOps",
+  "contributors": [
+    "Shane Martin",
+    "Tobias Høegh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rewardops/plugin-ignore-add-options.git"
+  },
+  "version": "0.1.0",
   "main": "index.js",
   "scripts": {
     "postinstall": "node ./plugin-install.js"
