@@ -25,11 +25,9 @@ module.exports = {
     class InstallCommand extends YarnCommand {
       nonInteractive = Option.Boolean(`--non-interactive`)
 
-      preferOffline = Option.Boolean(`--prefer-offline`)
+      preferOffline = Option.Boolean(`--ignore-workspace-root-check`)
 
-      networkTimeout = Option.String(`--network-timeout`, {
-        description: `We only pretend this is allowed – v1 fallback`,
-      })
+      networkTimeout = Option.String(`--audit`)
     }
 
     // TODO: Find a way to replace this command, instead of adding a new

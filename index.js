@@ -1,28 +1,38 @@
 module.exports = {
   name: 'plugin-ignore-add-options',
   factory: () => {
-    if (process.argv.includes('install')) {
-      // List all yarn v3 options
+    if (process.argv.includes('add')) {
+      // List all Yarn v3 `add` command options
       const validOptions = [
-        '-h',
-        '--help',
         '--json',
-        '--immutable',
-        '--immutable-cache',
-        '--check-cache',
-        '--inline-builds',
+        '-E',
+        '--exact',
+        '-T',
+        '--tilde',
+        '-C',
+        '--caret',
+        '-D',
+        '--dev',
+        '-P',
+        '--peer',
+        '-O',
+        '--optional',
+        '--prefer-dev',
+        '-i',
+        '--interactive',
+        '--cached',
         '--mode',
-      ]
+      ];
 
       process.argv = process.argv
         .map((arg, i) => {
-          if (i === 0 || i === 1 || validOptions.includes(arg)) {
-            return arg
+          if (i === 0 || i === 1 || validOptions.includes(arg) || !arg.startsWith('-')) {
+            return arg;
           }
 
-          return null
+          return null;
         })
-        .filter(Boolean)
+        .filter(Boolean);
     }
 
     return {}
